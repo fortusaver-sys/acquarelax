@@ -1,0 +1,97 @@
+{
+  "theme": "Light",
+  "archetype": "1 (Organic & Earthy) mixed with 5 (Luxury)",
+  "brand_name": "CDM Acqua & Relax",
+  "target_audience": "Premium Italian homeowners looking for luxury wellness solutions (water purification, premium mattresses, relax armchairs).",
+  "vibe": "Clean, pure, trustworthy, high-end Italian wellness. 'Portiamo salute, acqua pura e relax direttamente a casa tua.'",
+  "typography": {
+    "headings": {
+      "font_family": "Manrope",
+      "weights": ["400", "500", "700"],
+      "usage": "Elegant sans-serif, tight letter spacing for large headers (tracking-tight). No Inter for headings."
+    },
+    "body": {
+      "font_family": "Inter",
+      "weights": ["300", "400", "500"],
+      "usage": "Clean, highly legible body text. Loose line height (leading-relaxed)."
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FDFCF0",
+      "secondary": "#F5F3E9",
+      "tertiary": "#FAF9F5"
+    },
+    "accents": {
+      "water_primary": "#A3CBE0",
+      "water_secondary": "#D6E8ED",
+      "water_tertiary": "#AEC0B2",
+      "relax_primary": "#AFA393",
+      "relax_secondary": "#DCD3C6",
+      "relax_tertiary": "#C8B9A6"
+    },
+    "text": {
+      "primary": "#2C2C2A",
+      "secondary": "#5F5E5C",
+      "inverse": "#FDFCF0"
+    },
+    "cta": {
+      "primary": "#2C2C2A",
+      "primary_hover": "#4A4A46",
+      "whatsapp": "#25D366"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy. Use large paddings (p-12, p-16, p-24) to create a luxurious and airy feel.",
+    "container_max_width": "max-w-7xl",
+    "border_radius": "rounded-3xl for main cards/sections, rounded-full for buttons/pills.",
+    "shadows": "Very soft, ambient shadows. e.g., shadow-[0_8px_30px_rgba(44,44,42,0.04)]",
+    "grids": "Use bento grids and asymmetric layouts (MODE A: TETRIS GRID) for product features to avoid standard bootstrap looks."
+  },
+  "surfaces": {
+    "header": "Crystal Glass: backdrop-blur-xl bg-[#FDFCF0]/80, sticky top-0, z-50, soft bottom border border-[#AFA393]/20.",
+    "cards": "Flat solid background (#F5F3E9 or white), 1px subtle border, soft hover lift (-translate-y-1) and shadow increase.",
+    "placeholders": "Soft gradient backgrounds using brand accent colors, with a centered, elegant 'Immagine Prova' text label."
+  },
+  "interactions_and_motion": {
+    "hover": "All interactive elements must have smooth hover states. Buttons scale very slightly or change background color.",
+    "scroll": "Soft fade-in and slide-up animations for sections as they enter the viewport using framer-motion.",
+    "micro_interactions": "Floating WhatsApp button with continuous soft pulse animation."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full). Primary CTA: dark background (#2C2C2A) with light text. Secondary CTA: outline with text color matching the border.",
+    "navigation": "Sticky glassmorphism navbar. Must include IT/EN language switcher. Links: Home, Acqua, Relax, Poltrone, Chi siamo, Showroom, Contatti.",
+    "cards": "Problem cards: Minimalist, large icons/numbers, generous padding. Product cards: Image top, elegant typography below.",
+    "timeline": "Vertical or horizontal timeline for 'Metodo CDM' (4 steps) with soft connecting lines and highlighted nodes.",
+    "accordion": "For FAQ section. Minimalist styling, smooth expansion, no heavy borders."
+  },
+  "image_urls": {
+    "hero_water": {
+      "url": "https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBraXRjaGVuJTIwYnJpZ2h0fGVufDB8fHx8MTc4MTAzMzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Luxury modern kitchen representing clean water at home. Use in hero or water section."
+    },
+    "water_before_after": {
+      "url": "https://customer-assets.emergentagent.com/job_riposo-puro-italia/artifacts/r12b40f7_ChatGPT%20Image%209%20giu%202026%2C%2021_32_42.png",
+      "description": "Water before/after comparison image provided by the user. Use in the Acqua section."
+    },
+    "relax_bedroom": {
+      "url": "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwYmVkcm9vbSUyMGx1eHVyeSUyMGJyaWdodHxlbnwwfHx8fDE3ODEwMzM4NDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Premium luxury bright bedroom. Use in the Relax/Mattresses section."
+    },
+    "relax_armchair": {
+      "url": "https://images.unsplash.com/photo-1707848106960-74e1b223297b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsZWF0aGVyJTIwYXJtY2hhaXIlMjBtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc4MTAzMzg0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Luxury leather armchair in modern living room. Use in the Poltrone section."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a premium, airy, one-page marketing site using React, Tailwind CSS, and Framer Motion.",
+    "Use Manrope for headings and Inter for body text. Enforce tracking-tight on large headings.",
+    "Implement a sticky navbar with glassmorphism and an IT/EN language switcher.",
+    "For sections lacking specific images, construct elegant placeholders using a soft gradient background (e.g., from water_secondary to relax_secondary) and center a text label saying 'Immagine Prova'.",
+    "Section Order: Hero, Problema (3 cards), Acqua (test, advantages, before/after), Relax/Materassi (products), Poltrone (products), Chi siamo (20 years), Metodo CDM (4 step timeline), Showroom, Finanziamenti, Recensioni, FAQ, Footer.",
+    "Include a floating WhatsApp button fixed to the bottom right with a continuous pulse animation.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Use large paddings and negative space to create a 5,000 euro perceived value. Do not cram elements.",
+    "Do not use Shadcn for the main marketing layouts; use pure Tailwind/HTML to achieve the requested organic/luxury asymmetry. You can use Shadcn for the FAQ accordion or interactive forms if customized heavily."
+  ]
+}
