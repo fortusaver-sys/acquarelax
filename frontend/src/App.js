@@ -5,6 +5,7 @@ import "./App.css";
 import { LangProvider } from "./i18n/LangContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import SignalsExperience from "./components/SignalsExperience";
 import ProblemSection from "./components/ProblemSection";
 import WaterSection from "./components/WaterSection";
 import RelaxSection from "./components/RelaxSection";
@@ -24,6 +25,7 @@ const HomePage = () => (
     <Header />
     <main>
       <Hero />
+      <SignalsExperience />
       <ProblemSection />
       <WaterSection />
       <RelaxSection />
